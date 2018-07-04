@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: AliceBlue;
+  max-width: 100%;
+}
+
+#bgImg {
+  position: absolute;
+  object-fit: cover;
+  height: 100vh;
+  min-width: 100vw;
+  max-width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#headline, #portfolio, #about {
+  padding: 0 1em;
+}
+
+#headline {
+  height: 95vh;
+  text-align: center;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5vh;
+  color: white;
+}
+
+#headline h1 {
+  margin-bottom: 0.2em;
+}
+
+.titleList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: .2em;
+}
+
+.titleList li {
+  padding: 2%;
+}
+
+.titleList img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.titleList img:hover {
+  opacity: 0.5;
+}
+
+nav {
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  background-color: royalblue;
+  font-size: 2em;
+  text-align: center;
+  border-right: 1px solid black;
+  padding: 0.6em;
+}
+
+nav li:hover {
+  opacity: 0.5;
+}
+
+#about {
+  font-size: 1.3em;
+  margin: 2em 0;
+}
+
+.firstWord {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline;
+}
+
+#about p {
+  display: inline;
+  line-height: 1.4em;
+}
+
+#portfolio {
+  font-size: 1.4em;
+}
+
+h2 {
+  padding-top: 1em;
+}
+
+.project {
+  border-bottom: 0.5em solid royalblue;
+}
+
+.projectPic {
+  width: 100%;
+  text-align: center;
+}
+
+.project span {
+  font-weight: bold;
+}
+
+.project ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project li {
+  padding-bottom: 1em;
+}
+
+footer {
+  color: white;
+  background-color: royalblue;
+  text-align: center;
+}
+
+footer p {
+  padding: .3em;
+}
