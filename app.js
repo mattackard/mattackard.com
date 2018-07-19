@@ -7,10 +7,11 @@ let bgImgHeight = $('#bgImg').height();
 let imgBreakpoint = 800;                         //width in pixels when image changes to wide version
 let orientation = screen.msOrientation || (screen.orientation || screen.mozOrientation || {}).type;
 
+const $nav = $('nav');
 const $navAbout = $('#navAbout');
 const $navPortfolio = $('#navPortfolio');
 const $about = $('#about');
-const $portfolio = $('#portfolio');
+const $portfolio = $('.project');
 
 let offset = 0;
 
@@ -22,28 +23,31 @@ function bgImageCenter() {
   }
 }
 
-function setImage() {
+function adjustWide() {
   orientation = screen.msOrientation || (screen.orientation || screen.mozOrientation || {}).type;
   if (windowWidth > imgBreakpoint || orientation === 'landscape-primary') {
     $("#bgImg").attr("src", "img/bg_image_wide.jpg");
+    $nav.hide();                    //hide nav and show about and portfolio
+    $about.show();
+    $portfolio.show();
   }
   else {
     $("#bgImg").attr("src", "img/bg_image_thin.jpg");
+    $portfolio.hide();         //start with partfolio hidden
+    $nav.show();
+    $about.show();
   }
 }
 
 bgImageCenter();
-setImage();
+adjustWide();
 
 $(window).resize(() => {                                            //keeps the background image centered on window resize
   windowHeight = window.screen.height;
   windowWidth = window.screen.width;
-  setImage();
+  adjustWide();
   bgImageCenter();
 });
-
-//start with partfolio hidden
-$portfolio.hide();
 
 $('nav').click((e) => {                                       //fade in selected content and hide the unselected content
   if ($(e.target).text() == 'About') {
