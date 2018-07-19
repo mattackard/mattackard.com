@@ -35,7 +35,7 @@ body {
 }
 
 #headline h1 {
-  margin-bottom: 0.2em;
+  margin: 0.2em 0;
 }
 
 .titleList {
@@ -136,4 +136,13 @@ footer {
 
 footer p {
   padding: .3em;
+}
+
+@media (min-width: 1000px) {
+  body {
+
+  }
+  #headline {
+
+  }
 }
