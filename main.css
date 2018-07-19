@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background-color: AliceBlue;
   max-width: 100%;
 }
@@ -19,7 +19,7 @@ body {
   z-index: -1;
 }
 
-#headline, #portfolio, #about {
+#headline, .project, #about {
   padding: 0 1em;
 }
 
@@ -89,7 +89,6 @@ nav li:hover {
 
 .firstWord {
   font-size: 1.5em;
-  font-weight: bold;
   display: inline;
 }
 
@@ -98,7 +97,7 @@ nav li:hover {
   line-height: 1.4em;
 }
 
-#portfolio {
+.project {
   font-size: 1.4em;
 }
 
@@ -113,10 +112,6 @@ h2 {
 .projectPic {
   width: 100%;
   text-align: center;
-}
-
-.project span {
-  font-weight: bold;
 }
 
 .project ul {
@@ -139,10 +134,100 @@ footer p {
 }
 
 @media (min-width: 1000px) {
+
+  /* setting up the grid template used in the desktop layout */
   body {
-
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh auto auto auto auto auto;
+    grid-template-areas:
+      "title ."
+      "about about"
+      "project1 project1"
+      "project2 project2"
+      "project3 project3"
+      "footer footer";
+    margin: 0 10%;
   }
+
   #headline {
-
+    grid-area: title;
+    background-color: rgba(100,100,100,0.6);
   }
+
+  #about{
+    grid-area: about;
+  }
+
+  #personal {
+    grid-area: project1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+      "left right"
+      "left right";
+  }
+
+  #mweep {
+    grid-area: project2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+      "left right"
+      "left right";
+  }
+
+  #franker {
+    grid-area: project3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+      "left right"
+      "left right";
+  }
+
+  .left {
+    grid-area: left;
+  }
+
+  .right {
+    grid-area: right;
+  }
+
+  #mweep {
+    grid-area: project2;
+  }
+
+  #franker {
+    grid-area: project3;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  /* the rest of the desktop styling */
+  #headline {
+    color: black;
+    justify-content: center;
+    text-align: left;
+  }
+
+  #name {
+    font-size: 2em;
+    padding-left: 3%;
+  }
+
+  #jobTitle {
+    font-size: 4em;
+    padding-left: 3%;
+  }
+
+  .titleList {
+    justify-content: flex-start;
+  }
+
 }
