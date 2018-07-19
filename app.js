@@ -4,16 +4,15 @@ let windowHeight = window.screen.height;
 let windowWidth = window.screen.width;
 let bgImgWidth = $('#bgImg').width();
 let bgImgHeight = $('#bgImg').height();
+let offset = 0;                                  //initial offset for background image centering
 let imgBreakpoint = 800;                         //width in pixels when image changes to wide version
-let orientation = screen.msOrientation || (screen.orientation || screen.mozOrientation || {}).type;
+let orientation = screen.msOrientation || (screen.orientation || screen.mozOrientation || {}).type;   //get orientation of screen for mobile
 
 const $nav = $('nav');
 const $navAbout = $('#navAbout');
 const $navPortfolio = $('#navPortfolio');
 const $about = $('#about');
 const $portfolio = $('.project');
-
-let offset = 0;
 
 function bgImageCenter() {
   if ($('#bgImg').width() -  window.innerWidth > 0) {
@@ -42,7 +41,7 @@ function adjustWide() {
 bgImageCenter();
 adjustWide();
 
-$(window).resize(() => {                                            //keeps the background image centered on window resize
+$(window).resize(() => {                                            //adjusts the layout anytime the window is resized
   windowHeight = window.screen.height;
   windowWidth = window.screen.width;
   adjustWide();

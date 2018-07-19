@@ -192,14 +192,17 @@ footer p {
 
   .left {
     grid-area: left;
+    background-color: rgba(100,100,100,0.3);
   }
 
   .leftTop {
     grid-area: leftTop;
+    background-color: rgba(100,100,100,0.3);
   }
 
   .leftBottom {
     grid-area: leftBottom;
+    background-color: rgba(100,100,100,0.3);
   }
 
   .right {
@@ -246,6 +249,10 @@ footer p {
 
   .projectPic {
     align-self: center;
+  }
+
+  .project {
+    padding: 0;
   }
 
 }
