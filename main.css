@@ -138,11 +138,11 @@ footer p {
   /* setting up the grid template used in the desktop layout */
   body {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 100vh auto auto auto auto auto;
     grid-template-areas:
       "title ."
-      "about about"
+      "aboutLeft aboutRight"
       "project1 project1"
       "project2 project2"
       "project3 project3"
@@ -156,53 +156,62 @@ footer p {
   }
 
   #about{
-    grid-area: about;
+    grid-area: aboutLeft;
+    background-color: rgba(100,100,100,0.3);
   }
 
   #personal {
     grid-area: project1;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
-      "left right"
-      "left right";
+      "left rightTop"
+      "left rightBottom";
   }
 
   #mweep {
     grid-area: project2;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
-      "left right"
-      "left right";
+      "leftTop right"
+      "leftBottom right";
   }
 
   #franker {
     grid-area: project3;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
-      "left right"
-      "left right";
+      "left rightTop"
+      "left rightBottom";
   }
 
   .left {
     grid-area: left;
   }
 
+  .leftTop {
+    grid-area: leftTop;
+  }
+
+  .leftBottom {
+    grid-area: leftBottom;
+  }
+
   .right {
     grid-area: right;
   }
 
-  #mweep {
-    grid-area: project2;
+  .rightTop {
+    grid-area: rightTop;
   }
 
-  #franker {
-    grid-area: project3;
+  .rightBottom {
+    grid-area: rightBottom;
   }
 
   footer {
@@ -228,6 +237,15 @@ footer p {
 
   .titleList {
     justify-content: flex-start;
+  }
+
+  .project img {
+    width: 60%;
+    padding: 5%;
+  }
+
+  .projectPic {
+    align-self: center;
   }
 
 }
