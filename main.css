@@ -60,35 +60,13 @@ body {
   opacity: 0.5;
 }
 
-nav {
-  display: inline-grid;
-  grid-template-columns: 50% 50%;
-  justify-content: space-around;
-  list-style: none;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  background-color: royalblue;
-  font-size: 2em;
-  text-align: center;
-  border-right: 1px solid black;
-  padding: 0.6em;
-}
-
-nav li:hover {
-  opacity: 0.5;
-}
-
 #about {
   font-size: 1.3em;
   margin: 2em 0;
 }
 
 .firstWord {
-  font-size: 1.5em;
+  font-size: 2em;
   display: inline;
 }
 
@@ -106,7 +84,7 @@ h2 {
 }
 
 .project {
-  border-bottom: 0.5em solid royalblue;
+  border-top: 0.5em solid royalblue;
 }
 
 .projectPic {
@@ -133,6 +111,10 @@ footer p {
   padding: .3em;
 }
 
+
+
+
+
 /*******************************************
 *****************DESKTOP LAYOUT ************
 ********************************************/
@@ -151,7 +133,7 @@ footer p {
       "project2 project2"
       "project3 project3"
       "footer footer";
-    margin: 0 10%;
+    margin: 0 7%;
   }
 
   #headline {
@@ -166,7 +148,7 @@ footer p {
 
   #about{
     grid-area: aboutLeft / aboutLeft / aboutRight / aboutRight;
-    background-color: rgb(202, 205, 209);
+    background-color: rgb(220, 220, 220);
   }
 
   #personal {
@@ -275,12 +257,16 @@ footer p {
 
   .projectPic, .project a {
     align-self: center;
-    width: 96%;
-    padding: 5% 1%;
+    width: 88%;
+    padding: 5% 3%;
   }
 
   .project {
     padding: 0;
+  }
+
+  .project h2, .project ul {
+    padding: 5% 5%;
   }
 
 }
