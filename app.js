@@ -4,6 +4,7 @@ let windowWidth = window.screen.width;
 let bgImg = document.querySelector('#bgImg');
 let imgBreakpoint = 800;                         //width in pixels when image changes to wide version
 let orientation = screen.msOrientation || (screen.orientation || screen.mozOrientation || {}).type;   //get orientation of screen for mobile
+window.sr = ScrollReveal({ duration: 700 , distance: '200px' });
 
 
 function adjustWide() {                                       //changes the background image source for wide(landscape) and thin(portrait) screens
@@ -25,3 +26,6 @@ window.addEventListener('resize', () => {                                       
   adjustWide();
   console.log('resized');
 });
+
+sr.reveal('.fadeLeft', { origin: 'left' });
+sr.reveal('.fadeRight', { origin: 'right' });
