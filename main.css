@@ -1,272 +1,65 @@
-html {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Work Sans', sans-serif;
-  background-color: AliceBlue;
-  max-width: 100%;
-}
-
-#bgImg {
-  position: absolute;
-  object-fit: cover;
-  height: 100vh;
-  min-width: 100vw;
-  max-width: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
-#headline, .project, #about {
-  padding: 0 1em;
-}
-
-#headline {
-  height: 95vh;
+  background-color: #070030;
+  color: white;
+  line-height: 1.6em;
+  font-size: 0.8em;
   text-align: center;
-  font-size: 1.4em;
+  width: 80%;
+  margin: 0 10%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "Major Mono Display", monospace;
+}
+
+.contentBlock {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 5vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.techList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.techList li {
+  margin: 0 0.7em;
+}
+
+.project a {
   color: white;
 }
 
-#headline h1 {
-  margin: 0.2em 0;
-}
-
-.titleList {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0;
-  margin: .2em;
-}
-
-.titleList li {
-  padding: 2%;
-}
-
-.titleList img {
-  width: 1.5em;
-  height: 1.5em;
-}
-
-.titleList img:hover {
-  opacity: 0.5;
+#headerTech li {
+  margin: 0 1em;
 }
 
 #about {
-  font-size: 1.3em;
-  margin: 2em 0;
-}
-
-.firstWord {
-  font-size: 2em;
-  display: inline;
-}
-
-#about p {
-  display: inline;
-  line-height: 1.4em;
-}
-
-.project {
-  font-size: 1.4em;
-}
-
-h2 {
-  padding-top: 1em;
-}
-
-.project {
-  border-top: 0.5em solid royalblue;
+  margin: 4em 0;
 }
 
 .projectPic {
   width: 100%;
-  text-align: center;
 }
-
-.project ul {
-  list-style: none;
-  padding: 0;
-}
-
-.project li {
-  padding-bottom: 1em;
-}
-
-footer {
-  color: white;
-  background-color: royalblue;
-  text-align: center;
-}
-
-footer p {
-  padding: .3em;
-}
-
-
-
-
-
-/*******************************************
-*****************DESKTOP LAYOUT ************
-********************************************/
-
-@media (min-width: 1000px) {
-
-  /* setting up the grid template used in the desktop layout */
-  body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100vh auto auto auto auto auto;
-    grid-template-areas:
-      "title ."
-      "aboutLeft aboutRight"
-      "project1 project1"
-      "project2 project2"
-      "project3 project3"
-      "footer footer";
-    margin: 0 7%;
-  }
-
-  #headline {
-    grid-area: title;
-    background-color: rgba(100,100,100,0.6);
-  }
-
-  #aboutLeft {
-    grid-area: aboutLeft;
-    background-color: rgb(202, 205, 209);
-  }
-
-  #about{
-    grid-area: aboutLeft / aboutLeft / aboutRight / aboutRight;
-    background-color: rgb(220, 220, 220);
-  }
-
-  #personal {
-    grid-area: project1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "left rightTop"
-      "left rightBottom";
-  }
-
-  #mweep {
-    grid-area: project2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "leftTop right"
-      "leftBottom right";
-  }
-
-  #franker {
-    grid-area: project3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "left rightTop"
-      "left rightBottom";
-  }
-
-  .left {
-    grid-area: left;
-    background-color: rgb(202, 205, 209);
-  }
-
-  .leftTop {
-    grid-area: leftTop;
-    background-color: rgb(202, 205, 209);
-  }
-
-  .leftBottom {
-    grid-area: leftBottom;
-    background-color: rgb(202, 205, 209);
-  }
-
-  .right {
-    grid-area: right;
-  }
-
-  .rightTop {
-    grid-area: rightTop;
-  }
-
-  .rightBottom {
-    grid-area: rightBottom;
-  }
-
-  .leftTop, .leftBottom, .rightTop, .rightBottom {
-    margin: 0;
-    padding: 10% 5%;
-  }
-
-  footer {
-    grid-area: footer;
-  }
-
-
-
-
-
-
-  /* the rest of the desktop styling */
-
-  #headline {
-    color: black;
-    justify-content: center;
-    text-align: left;
-  }
-
-  #name {
-    font-size: 2em;
-    padding-left: 3%;
-  }
-
-  #jobTitle {
-    font-size: 4em;
-    padding-left: 3%;
-  }
-
-  .titleList {
-    justify-content: flex-start;
-  }
-
-  #about {
-    margin: 5% 10%;
-    padding: 5% 5%;
-    border: 1px solid black;
-  }
-
-  .imgContainer {
-    width: 100%;
-    height: 100%;
-  }
-
-  .projectPic, .project a {
-    align-self: center;
-    width: 88%;
-    padding: 5% 3%;
-  }
-
-  .project {
-    padding: 0;
-  }
-
-  .project h2, .project ul {
-    padding: 5% 5%;
-  }
-
-}
+/*# sourceMappingURL=main.css.map */

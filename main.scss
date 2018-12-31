@@ -1,0 +1,63 @@
+
+$background-color: rgb(7, 0, 48);
+$text-color: white;
+
+$title-font: 'Major Mono Display', monospace;
+
+@mixin text-font {
+  $text-font: 'Montserrat', sans-serif;
+  line-height: 1.6em;
+  font-size: 0.8em;
+}
+
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  @include text-font;
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: $title-font;
+}
+
+.contentBlock {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.techList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+
+  li {
+    margin: 0 0.7em;
+  }
+}
+
+.project {
+  a {
+    color: white;
+  }
+}
+
+#headerTech li {
+  margin: 0 1em;
+}
+
+#about {
+  margin: 4em 0;
+}
+
+.projectPic {
+  width: 100%;
+}
