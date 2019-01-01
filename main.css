@@ -62,4 +62,27 @@ h1, h2, h3 {
 .projectPic {
   width: 100%;
 }
+
+.websiteSVG {
+  fill: white;
+  width: 48px;
+  height: 48px;
+  margin-top: 5px;
+}
+
+.sourceSVG {
+  fill: white;
+  width: 56px;
+  height: 56px;
+}
+
+@media (min-width: 1000px) {
+  body {
+    width: 60%;
+    margin: 0 20%;
+  }
+  .projectPic {
+    max-width: 70%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
