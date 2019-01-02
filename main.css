@@ -55,6 +55,12 @@ h1, h2, h3 {
   margin: 0 0.7em;
 }
 
+#portrait {
+  max-width: 80%;
+  margin: 0 10%;
+  opacity: 0.8;
+}
+
 .project a {
   color: white;
 }
