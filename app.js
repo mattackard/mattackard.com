@@ -2,12 +2,16 @@
 let windowHeight = window.screen.height;
 let windowWidth = window.screen.width;
 let bgImg = document.querySelector('#bgImg');
-let imgBreakpoint = 800;                         //width in pixels when image changes to wide version
-let orientation = screen.msOrientation || (screen.orientation || screen.mozOrientation || {}).type;   //get orientation of screen for mobile
+
+//width in pixels when image changes to wide version
+let imgBreakpoint = 800;
+
+//get orientation of screen for mobile
+let orientation = screen.msOrientation || (screen.orientation || screen.mozOrientation || {}).type;
 window.sr = ScrollReveal({ duration: 700 , distance: '100px' });
 
-
-function adjustWide() {                                       //changes the background image source for wide(landscape) and thin(portrait) screens
+//changes the background image source for wide(landscape) and thin(portrait) screens
+function adjustWide() {
   orientation = screen.msOrientation || (screen.orientation || screen.mozOrientation || {}).type;
   if (windowWidth > imgBreakpoint || orientation === 'landscape-primary') {
     bgImg.src = 'img/bg_image_wide.jpg';
@@ -20,7 +24,7 @@ function adjustWide() {                                       //changes the back
 adjustWide();
 
 //adjusts the layout anytime the window is resized
-window.addEventListener('resize', () => {                                            
+window.addEventListener('resize', () => {
   windowHeight = window.screen.height;
   windowWidth = window.screen.width;
   adjustWide();
