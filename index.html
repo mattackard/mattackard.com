@@ -10,24 +10,28 @@
   <link rel='stylesheet' href='main.css'>
 </head>
 <body>
-  <img id='bgImg' src='' alt='Picture of Matt Ackard'>
-  <div id='headline'>
+  <!-- BG Image source loaded in JS depending on sreen width -->
+  <img id='bgImg' src='' alt='Picture of Matt Ackard'> 
+
+  <section id='headline'>
     <h1 id='name' class='fadeRight'>Matt Ackard</h1>
     <h1 id='jobTitle' class='fadeRight'>Web Developer</h1>
     <ul class='titleList fadeRight'>
       <li>Javascript</li>
-      <li>jQuery</li>
-      <li>React</li>
       <li>Node</li>
+      <li>React</li>
+      <li>Express</li>
     </ul>
     <ul class='titleList fadeRight'>
       <li>mattackard@gmail.com</li>
       <li><a href='https://www.linkedin.com/in/matthew-ackard/'><img src='img/linkedin.svg' alt='LinkedIn Profile Link'></a></li>
       <li><a href='https://github.com/mattackard'><img src='img/git.svg' alt='Github Profile Link'></a></li>
     </ul>
-  </div>
-  <div id='aboutLeft'></div>
-  <div id='about'>
+  </section>
+
+  <section id='aboutLeft'></section>
+
+  <section id='about'>
     <span class='firstWord fadeRight'>Hello. </span>
     <p class='fadeRight'>My name is Matt Ackard. I am a web developer from San Jose, CA. I am currently looking for a position as a front-end web developer.
       My focus has been on Javascript and I generally use React(with JSX), Node, jQuery, and SASS.
@@ -35,8 +39,9 @@
       I enjoy working on interactive and media-heavy sites as well as animating elements for a smooth user experience.
       My portfolio is below with short descriptions to show what technologies were used.
       My email and links to my LinkedIn and Github profiles are at the top of the page.</p>
-  </div>
-  <div class='project' id="personal">
+  </section>
+
+  <section class='project' id="personal">
     <h2 class='rightTop fadeRight'>My Personal Website</h2>
     <div class='imgContainer left fadeLeft'>
       <a href='http://mattackard.xyz'><img class='projectPic' src='img/personalSite.png' alt='Personal website project image'></a>
@@ -49,8 +54,9 @@
         JQuery is used to fade the transition between pages.</p>
       <a href='http://mattackard.xyz'>Go to my personal website</a>
     </ul>
-  </div>
-  <div class='project' id="mweep">
+  </section>
+
+  <section class='project' id="mweep">
     <h2 class='leftTop fadeLeft'>Mweep Randomizer Game</h2>
     <div class='imgContainer right fadeRight'>
       <a href='http://franker.xyz/mweep'><img class='projectPic' src='img/mweep.png' alt='Mweep randomizer project image'></a>
@@ -62,8 +68,10 @@
         The randomizer skips the iconic cutscene of King Zora sliding to the left to save on time.
         Many people wish the cutscene was still in the game, so I built another randomizer with the only content being King Zora sliding.</p>
       <a href='http://franker.xyz/mweep'>Go to the Mweep Randomizer website</a>
-  </div>
-  <div class='project' id="franker">
+    </ul>
+  </section>
+
+  <section class='project' id="franker">
     <h2 class='rightTop fadeRight'>Franker.xyz - Hosted Web Apps</h2>
     <div class='imgContainer left fadeLeft'>
       <a href='http://franker.xyz'><img class='projectPic' src='img/franker.png' alt='Franker.xyz project image'></a>
@@ -75,7 +83,8 @@
         I watch livestreams frequently and they often have niche applications that they use for various reasons.
         Currently the site contains a bingo board for a particular streamer, and reocities (web archive of Geocities) website randomizer, and a game based on Ocarina of Time randomizers.</p>
       <a href='http://franker.xyz'>Go to Franker.xyz</a>
-    </div>
+    </ul>
+  </section>
   <footer>
     <p>&copy Matt Ackard 2018</P>
   </footer>

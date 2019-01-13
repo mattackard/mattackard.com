@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: 'Work Sans', sans-serif;
-  background-color: AliceBlue;
+  background-color: #eee;
   max-width: 100%;
 }
 
@@ -61,8 +61,8 @@ body {
 }
 
 #about {
-  font-size: 1.3em;
-  margin: 2em 0;
+  font-size: 1em;
+  margin: 4em 1em 6em;
 }
 
 .firstWord {
@@ -76,15 +76,16 @@ body {
 }
 
 .project {
-  font-size: 1.4em;
+  font-size: 1em;
+  line-height: 1.4em;
+  border-top: 1px solid black;
+  padding: 4em 0;
+  margin: 0 2em;
 }
 
 h2 {
   padding-top: 1em;
-}
-
-.project {
-  border-top: 0.5em solid royalblue;
+  text-align: center;
 }
 
 .projectPic {
@@ -103,7 +104,7 @@ h2 {
 
 footer {
   color: white;
-  background-color: royalblue;
+  background-color: #aaa;
   text-align: center;
 }
 
@@ -133,7 +134,9 @@ footer p {
       "project2 project2"
       "project3 project3"
       "footer footer";
-    margin: 0 7%;
+    width: 80%;
+    margin: auto;
+    background-color: white;
   }
 
   #headline {
@@ -210,7 +213,7 @@ footer p {
 
   .leftTop, .leftBottom, .rightTop, .rightBottom {
     margin: 0;
-    padding: 10% 5%;
+    align-items: end;
   }
 
   footer {
@@ -258,14 +261,20 @@ footer p {
   .projectPic, .project a {
     align-self: center;
     width: 88%;
-    padding: 5% 3%;
+    padding: 20% 3%;
   }
 
   .project {
+    margin: 0;
     padding: 0;
+    font-size: 1em;
   }
 
-  .project h2, .project ul {
+  .project h2 {
+    padding: 20% 0 0;
+  } 
+
+  .project ul {
     padding: 5% 5%;
   }
 
