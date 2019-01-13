@@ -83,6 +83,10 @@ body {
   margin: 0 2em;
 }
 
+.project a {
+  padding: 0;
+}
+
 h2 {
   padding-top: 1em;
   text-align: center;
@@ -103,8 +107,7 @@ h2 {
 }
 
 footer {
-  color: white;
-  background-color: #aaa;
+  color: black;
   text-align: center;
 }
 
@@ -258,10 +261,16 @@ footer p {
     height: 100%;
   }
 
-  .projectPic, .project a {
+  .projectPic {
     align-self: center;
     width: 88%;
     padding: 20% 3%;
+  }
+
+  .project a {
+    align-self: center;
+    width: 88%;
+    padding: 3%;
   }
 
   .project {
