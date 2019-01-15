@@ -83,10 +83,6 @@ body {
   margin: 0 2em;
 }
 
-.project a {
-  padding: 0;
-}
-
 h2 {
   padding-top: 1em;
   text-align: center;
@@ -100,6 +96,23 @@ h2 {
 .project ul {
   list-style: none;
   padding: 0;
+}
+
+.projectLink {
+  margin-right: 1em;
+  padding: .4em 1em;
+  background-color: lightblue;
+  border-radius: 0.4em;
+  color: black;
+  text-decoration: none;
+}
+
+.projectLink:hover {
+  opacity: 0.6;
+}
+
+.project p {
+  margin-bottom: 2em;
 }
 
 .project li {
@@ -265,12 +278,6 @@ footer p {
     align-self: center;
     width: 88%;
     padding: 20% 3%;
-  }
-
-  .project a {
-    align-self: center;
-    width: 88%;
-    padding: 3%;
   }
 
   .project {
