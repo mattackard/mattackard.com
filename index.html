@@ -1,110 +1,180 @@
 <!DOCTYPE html>
 <head>
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Matt Ackard | Web Developer</title>
-  <meta name='description' content="Matt Ackard's web development portfolio website" />
-  <link rel='stylesheet' href='normalize.css'>
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-  <link rel='stylesheet' href='main.css'>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Matt Ackard | Web Developer</title>
+	<meta
+		name="description"
+		content="Matt Ackard's web development portfolio website"
+	/>
+	<link rel="stylesheet" href="normalize.css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Nunito:400,700"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css?family=Work+Sans"
+		rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="main.css" />
 </head>
 <body>
-  
-  <!-- BG Image source loaded in JS depending on sreen width -->
-  <img id='bgImg' src='' alt='Picture of Matt Ackard'> 
+	<!-- BG Image source loaded in JS depending on sreen width -->
+	<img id="bgImg" src="" alt="Picture of Matt Ackard" />
 
+	<section id="headline">
+		<h1 id="name" class="fadeRight">Matt Ackard</h1>
+		<h1 id="jobTitle" class="fadeRight">Web Developer</h1>
+		<ul class="titleList fadeRight">
+			<li>Javascript</li>
+			<li>Node</li>
+			<li>React</li>
+			<li>Express</li>
+		</ul>
+		<ul class="titleList fadeRight">
+			<li>mattackard@gmail.com</li>
+			<li>
+				<a href="https://www.linkedin.com/in/matthew-ackard/"
+					><img src="img/linkedin.svg" alt="LinkedIn Profile Link"
+				/></a>
+			</li>
+			<li>
+				<a href="https://github.com/mattackard"
+					><img src="img/git.svg" alt="Github Profile Link"
+				/></a>
+			</li>
+		</ul>
+	</section>
 
-  <section id='headline'>
-    <h1 id='name' class='fadeRight'>Matt Ackard</h1>
-    <h1 id='jobTitle' class='fadeRight'>Web Developer</h1>
-    <ul class='titleList fadeRight'>
-      <li>Javascript</li>
-      <li>Node</li>
-      <li>React</li>
-      <li>Express</li>
-    </ul>
-    <ul class='titleList fadeRight'>
-      <li>mattackard@gmail.com</li>
-      <li><a href='https://www.linkedin.com/in/matthew-ackard/'><img src='img/linkedin.svg' alt='LinkedIn Profile Link'></a></li>
-      <li><a href='https://github.com/mattackard'><img src='img/git.svg' alt='Github Profile Link'></a></li>
-    </ul>
-  </section>
+	<section id="aboutLeft"></section>
 
+	<section id="about">
+		<span class="firstWord fadeRight">Hello. </span>
+		<p class="fadeRight">
+			My name is Matt Ackard. I am a web developer from San Jose, CA. I am
+			a self-taught developer focused on Javascript with React. I have
+			experience building apps with Node, Epxpress, and Mongo as well. I
+			enjoy working on interactive and media-heavy sites as well as single
+			page apps with React. My portfolio is below with short descriptions
+			for each project along with some of the specific technologies used.
+			Live links as well as links to the source for each portfolio project
+			are provided. My email and links to my LinkedIn and Github profiles
+			are at the top of the page. Thanks for stopping by to look at my
+			work!
+		</p>
+	</section>
 
-  <section id='aboutLeft'></section>
+	<section class="project" id="srl">
+		<h2 class="rightTop fadeRight">SRL Bets</h2>
+		<div class="imgContainer left fadeLeft">
+			<a href="https://srlbets.com"
+				><img
+					class="projectPic"
+					src="img/franker.png"
+					alt="SRL Bets project"
+			/></a>
+		</div>
+		<ul class="rightBottom fadeRight">
+			<li>
+				<span>Featured tech : </span> Twitch.tv API, Oauth2.0,
+				Javascript Promises/Async, Axios
+			</li>
+			<li>
+				<span>Core tech : </span>Javascript, React, Node, Express,
+				MongoDB, Sass
+			</li>
+			<p>
+				SRLBets is a web app that allows twitch users to bet on the
+				winner of races hosted by SpeedRunsLive. SRLBets extends the
+				SpeedRunsLive API to allow for tracking extra race statistics
+				and further integration with twitch user profiles. While
+				creating this app I learned about MERN stack client-server
+				separation and promise based javascript requests. The server
+				processes data from the SRL API at a set interval to keep the
+				database up to date with current race information. With future
+				development I hop to build a twitch extension that allows users
+				to get the same functionality without having to authorize their
+				twitch account or leave a twitch livestream.
+			</p>
+			<a class="projectLink" href="https://srlbets.com">Live</a>
+			<a class="projectLink" href="https://github.com/mattackard/SRLbets"
+				>Source</a
+			>
+		</ul>
+	</section>
 
+	<section class="project" id="todo">
+		<h2 class="leftTop fadeLeft">To-do List App</h2>
+		<div class="imgContainer right fadeRight">
+			<a href="http://mattackard.github.io/todoList"
+				><img
+					class="projectPic"
+					src="img/todo.png"
+					alt="To-do list website"
+			/></a>
+		</div>
+		<ul class="leftBottom fadeLeft">
+			<li>
+				<span>Featured tech : </span> Create-react-app, React-dnd, CSS
+				Animations
+			</li>
+			<li><span>Core tech : </span>React, SCSS, Javascript</li>
+			<p>
+				This is the app I made to get a better understanding of how
+				React works. It worked well as a learning opportunity because
+				the whole functionality is based around manipulating state and
+				passing new data down to nested components. I gained a better
+				understanding of some of the React lifecycle methods from
+				animating page elements using CSS classes. The way react renders
+				and re-renders components can make animating with CSS a little
+				tricky.
+			</p>
+			<a class="projectLink" href="https://mattackard.github.io/todoList"
+				>Live</a
+			>
+			<a class="projectLink" href="https://github.com/mattackard/todoList"
+				>Source</a
+			>
+		</ul>
+	</section>
 
-  <section id='about'>
-    <span class='firstWord fadeRight'>Hello. </span>
-    <p class='fadeRight'>My name is Matt Ackard. I am a web developer from San Jose, CA.
-      I am a self-taught developer focused on Javascript with React.
-      I have experience building apps with Node, Epxpress, and Mongo as well.
-      I enjoy working on interactive and media-heavy sites as well as single page apps with React.
-      My portfolio is below with short descriptions for each project along with some of the specific technologies used.
-      Live links as well as links to the source for each portfolio project are provided.
-      My email and links to my LinkedIn and Github profiles are at the top of the page.
-      Thanks for stopping by to look at my work!</p>
-  </section>
+	<section class="project" id="personal">
+		<h2 class="rightTop fadeRight">My Personal Website</h2>
+		<div class="imgContainer left fadeLeft">
+			<a href="http://mattackard.xyz"
+				><img
+					class="projectPic"
+					src="img/personal.png"
+					alt="Personal website project"
+			/></a>
+		</div>
+		<ul class="rightBottom fadeRight">
+			<li>
+				<span>Featured tech : </span> React-Transition, MountainProject
+				API, Flickr API
+			</li>
+			<li><span>Core tech : </span>React, Sass, Javascript</li>
+			<p>
+				My personal website hosts some of my photos via flickr and
+				climbing info from mountainproject. I learned how to use the
+				react-transition npm module after having issues with class based
+				css transitions and react component mounting. The page has a
+				different background image for each page that smoothly fades
+				when load new pages.
+			</p>
+			<a class="projectLink" href="https://mattackard.xyz">Live</a>
+			<a
+				class="projectLink"
+				href="https://github.com/mattackard/personal-website"
+				>Source</a
+			>
+		</ul>
+	</section>
 
+	<footer>
+		<p>&copy Matt Ackard 2019</p>
+	</footer>
 
-  <section class='project' id="personal">
-    <h2 class='rightTop fadeRight'>My Personal Website</h2>
-    <div class='imgContainer left fadeLeft'>
-      <a href='http://mattackard.xyz'><img class='projectPic' src='img/personal.png' alt='Personal website project'></a>
-    </div>
-    <ul class='rightBottom fadeRight'>
-      <li><span>Featured tech : </span> Flexbox, AJAX, Background Image Transitions</li>
-      <li><span>Core tech : </span>HTML, CSS, Javascript, jQuery</li>
-      <p>This is an early design for a personal website I was planning to build out.
-        The website is on a single page and new html content is loaded using AJAX.
-        JQuery is used to fade the transition between pages.</p>
-      <a class="projectLink" href='https://mattackard.xyz'>Live</a>
-      <a class="projectLink" href='https://github.com/mattackard/personal-website'>Source</a>
-    </ul>
-  </section>
-
-  <section class='project' id="todo">
-    <h2 class='leftTop fadeLeft'>To-do List App</h2>
-    <div class='imgContainer right fadeRight'>
-      <a href='http://mattackard.github.io/todoList'><img class='projectPic' src='img/todo.png' alt='To-do list website'></a>
-    </div>
-    <ul class='leftBottom fadeLeft'>
-      <li><span>Featured tech : </span> Create-react-app, React-dnd, CSS Animations</li>
-      <li><span>Core tech : </span>HTML, SCSS, Javascript, React</li>
-      <p>This is the app I made to get a better understanding of how React works.
-        It worked well as a learning opportunity because the whole functionality is based around manipulating state 
-        and passing new data down to nested components. I gained a better understanding of some of the React lifecycle
-        methods from animating page elements using CSS classes. The way react renders and re-renders components can make
-        animating with CSS a little tricky.
-      </p>
-      <a class="projectLink" href='https://mattackard.github.io/todoList'>Live</a>
-      <a class="projectLink" href='https://github.com/mattackard/todoList'>Source</a>
-    </ul>
-  </section>
-
-  <section class='project' id="franker">
-    <h2 class='rightTop fadeRight'>Franker.xyz - Hosted Web Apps</h2>
-    <div class='imgContainer left fadeLeft'>
-      <a href='http://franker.xyz'><img class='projectPic' src='img/franker.png' alt='Franker.xyz project'></a>
-    </div>
-    <ul class='rightBottom fadeRight'>
-      <li><span>Featured tech : </span>Flexbox</li>
-      <li><span>Core tech : </span>HTML, CSS, Javascript, jQuery</li>
-      <p>This webpage is where I post web apps that I've built mostly in relation to twitch.tv content.
-        I watch livestreams frequently and they often have niche applications that they use for various reasons.
-        Currently the site contains a bingo board for a particular streamer, and reocities (web archive of Geocities) website randomizer, and a game based on Ocarina of Time randomizers.</p>
-      <a class="projectLink" href='https://franker.xyz'>Live</a>
-      <a class="projectLink" href='https://github.com/mattackard/franker.xyz'>Source</a>
-    </ul>
-  </section>
-
-
-  <footer>
-    <p>&copy Matt Ackard 2019</P>
-  </footer>
-
-
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script src='app.js'></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="app.js"></script>
 </body>
