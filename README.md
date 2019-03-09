@@ -10,5 +10,5 @@ The site is built with plain HTML, CSS, and Javascript with an external JS modul
 
 ## Contact Me
 
--   [LinkedIn](https://reactjs.org/docs/getting-started.html)
+-   [LinkedIn](https://www.linkedin.com/in/matthew-ackard/)
 -   Email Me - <mattackard@gmail.com>
