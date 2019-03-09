@@ -9,7 +9,7 @@ let imgBreakpoint = 800;
 let orientation =
 	screen.msOrientation ||
 	(screen.orientation || screen.mozOrientation || {}).type;
-window.sr = ScrollReveal({ duration: 700, distance: "100px" });
+window.sr = ScrollReveal({ duration: 700, distance: "100px", reset: true });
 
 //changes the background image source for wide(landscape) and thin(portrait) screens
 function adjustWide() {
