@@ -1,4 +1,4 @@
-# [Mattackard.com](https://mattackard.com)
+# Mattackard.com
 
 [Mattackard.com](https://mattackard.com) is my web development portfolio website where I host my projects and provide links to my professional social media profiles.
 
