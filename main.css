@@ -140,8 +140,8 @@ footer p {
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100vh auto auto auto auto auto auto;
-        grid-template-areas: "title .""aboutLeft aboutRight""project1 project1""project2 project2""project3 project3""project4 project4""footer footer";
+        grid-template-rows: 100vh auto auto auto auto auto auto auto;
+        grid-template-areas: "title .""aboutLeft aboutRight""project1 project1""project2 project2""project3 project3""project4 project4""project5 project5""footer footer";
         width: 80%;
         margin: auto;
         background-color: white;
@@ -162,32 +162,40 @@ footer p {
         background-color: rgb(220, 220, 220);
     }
 
-    #srl {
+    #clide {
         grid-area: project1;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "left rightTop""left rightBottom";
-    }
-
-    #todo {
-        grid-area: project2;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         grid-template-areas: "leftTop right""leftBottom right";
     }
 
-    #buzz {
-        grid-area: project3;
+    #srl {
+        grid-area: project2;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         grid-template-areas: "left rightTop""left rightBottom";
     }
 
-    #personal {
+    #ncs {
+        grid-area: project3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;   
+        grid-template-areas: "leftTop right""leftBottom right";
+    }
+
+    #todo {
         grid-area: project4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "left rightTop""left rightBottom";
+    }
+
+    #buzz {
+        grid-area: project5;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;

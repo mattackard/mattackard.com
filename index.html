@@ -2,10 +2,10 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Matt Ackard | Web Developer</title>
+	<title>Matt Ackard | Developer</title>
 	<meta
 		name="description"
-		content="Matt Ackard's web development portfolio website"
+		content="Matt Ackard's portfolio website"
 	/>
 	<link rel="stylesheet" href="normalize.css" />
 	<link
@@ -24,12 +24,11 @@
 
 	<section id="headline">
 		<h1 id="name" class="fadeRight">Matt Ackard</h1>
-		<h1 id="jobTitle" class="fadeRight">Web Developer</h1>
+		<h1 id="jobTitle" class="fadeRight">Software Developer</h1>
 		<ul class="titleList fadeRight">
-			<li>Javascript</li>
-			<li>Node</li>
-			<li>React</li>
-			<li>Express</li>
+			<li>Networking</li>
+			<li>Full-Stack</li>
+			<li>DevOps</li>
 		</ul>
 		<ul class="titleList fadeRight">
 			<li>mattackard@gmail.com</li>
@@ -53,15 +52,51 @@
 	<section id="about">
 		<span class="firstWord fadeRight">Hello. </span>
 		<p class="fadeRight">
-			I am a web developer from San Jose, CA. I am a self-taught developer
-			focused on Javascript with the MERN stack. I enjoy working on
-			interactive and media-heavy sites as well as single page apps with
-			React. My portfolio is below with short descriptions for each
-			project along with some of the specific tech used. Live links as
-			well as links to the github source for each portfolio project are
-			provided. My email and links to my LinkedIn and Github profiles are
+			I am a software developer with experience ranging from full-stack
+			web development to creating virtualized networking applications. 
+			Experince with devops using AWS, Docker, Kubernetes, and Jenkins. 
+			Below are a selection of projects from my github with live links 
+			as well as links to the github source for each portfolio project. 
+			My email and links to my LinkedIn and Github profiles are
 			at the top of the page. Thanks for stopping by to look at my work!
 		</p>
+	</section>
+
+	<section class="project" id="clide">
+		<h2 class="leftTop fadeLeft">Clide</h2>
+		<div class="imgContainer right fadeRight">
+			<a href="https://mattackard.github.io/Clide/" target="_blank"
+				><video class="projectPic" alt="Clide demo project" autoplay muted loop>
+					<source src="img/clide_demo.webm" type="video/webm">
+				</video></a>
+		</div>
+		<ul class="leftBottom fadeLeft">
+			<li>
+				<span>Featured tech : </span> Webview, Go-SDL2
+			</li>
+			<li>
+				<span>Core tech : </span> Go, Bash, Javascript, CSS, HTML
+			</li>
+			<p>
+				Clide is a tool for creating automated demos for terminal-based
+				applications. Using a json file, you can script out a demo in the
+				terminal to free your hands up from having to copy and paste
+				commands, or handle typos when you're in the middle of giving
+				a presentation. Supported features include multi-window demos,
+				asynchronous and hidden processes, and color and font customization. 
+				The scripted commands run in real-time and display
+				the output in a window emulating a terminal.
+			</p>
+			<a class="projectLink" href="https://mattackard.github.io/Clide/" target="_blank"
+				>Live</a
+			>
+			<a
+				class="projectLink"
+				href="https://github.com/mattackard/Clide"
+				target="_blank"
+				>Source</a
+			>
+		</ul>
 	</section>
 
 	<section class="project" id="srl">
@@ -108,9 +143,42 @@
 		</ul>
 	</section>
 
-	<section class="project" id="todo">
-		<h2 class="leftTop fadeLeft">To-do List App</h2>
+	<section class="project" id="ncs">
+		<h2 class="leftTop fadeLeft">Go Networking Container Suite</h2>
 		<div class="imgContainer right fadeRight">
+			<a href="http://mattackard.github.io/todoList" target="_blank"
+				><img
+					class="projectPic"
+					src="img/ncs.png"
+					alt="Go Networking Container Suite project"
+			/></a>
+		</div>
+		<ul class="leftBottom fadeLeft">
+			<li>
+				<span>Featured tech : </span> Docker-Compose, TCP, HTTP, Procstats
+			</li>
+			<li><span>Core tech : </span>Go, Networking, Docker</li>
+			<p>
+				GoNCS is a suite of modular networking functions built in Docker 
+				containers. The containers include a reverse proxy, dns, logging 
+				manager, and a dashboard. These containers communicate with each 
+				other through network requests in order to stay independent of one 
+				another and stay isolated on the network.
+			</p>
+			<a
+				class="projectLink"
+				href="https://github.com/mattackard/GoNCS"
+				target="_blank"
+				>Source</a
+			>
+		</ul>
+	</section>
+
+	
+
+	<section class="project" id="todo">
+		<h2 class="rightTop fadeRight">To-do List App</h2>
+		<div class="imgContainer left fadeLeft">
 			<a href="http://mattackard.github.io/todoList" target="_blank"
 				><img
 					class="projectPic"
@@ -118,7 +186,7 @@
 					alt="To-do list website"
 			/></a>
 		</div>
-		<ul class="leftBottom fadeLeft">
+		<ul class="rightBottom fadeRight">
 			<li>
 				<span>Featured tech : </span> Create-react-app, React-dnd, CSS
 				Animations
@@ -150,8 +218,8 @@
 	</section>
 
 	<section class="project" id="buzz">
-		<h2 class="rightTop fadeRight">Buzz Co</h2>
-		<div class="imgContainer left fadeLeft">
+		<h2 class="leftTop fadeLeft">Buzz Co</h2>
+		<div class="imgContainer right fadeRight">
 			<a href="http://mattackard.github.io/BuzzWords" target="_blank"
 				><img
 					class="projectPic"
@@ -159,7 +227,7 @@
 					alt="Buzz Co website"
 			/></a>
 		</div>
-		<ul class="rightBottom fadeRight">
+		<ul class="leftBottom fadeLeft">
 			<li>
 				<span>Featured tech : </span> Styled-Components, typeit, emailJS
 			</li>
@@ -183,42 +251,6 @@
 			<a
 				class="projectLink"
 				href="https://github.com/mattackard/BuzzWords"
-				target="_blank"
-				>Source</a
-			>
-		</ul>
-	</section>
-
-	<section class="project" id="personal">
-		<h2 class="leftTop fadeLeft">My Personal Website</h2>
-		<div class="imgContainer right fadeRight">
-			<a href="http://mattackard.xyz" target="_blank"
-				><img
-					class="projectPic"
-					src="img/personal.png"
-					alt="Personal website project"
-			/></a>
-		</div>
-		<ul class="leftBottom fadeLeft">
-			<li>
-				<span>Featured tech : </span> React-Transition, MountainProject
-				API, Flickr API
-			</li>
-			<li><span>Core tech : </span>React, Sass, Javascript</li>
-			<p>
-				My personal website hosts some of my photos via flickr and
-				climbing info from mountainproject. I learned how to use the
-				react-transition npm module after having issues with class based
-				css transitions and react component mounting. The page has a
-				different background image for each page that smoothly fades
-				when load new pages.
-			</p>
-			<a class="projectLink" href="https://mattackard.xyz" target="_blank"
-				>Live</a
-			>
-			<a
-				class="projectLink"
-				href="https://github.com/mattackard/personal-website"
 				target="_blank"
 				>Source</a
 			>
